@@ -1,62 +1,65 @@
-# TAIsyncChromeExtension
-What is TAIsync?
-TAIsync is a Chrome extension that automates the process of syncing your extracted coding problem solutions and notes directly to a GitHub repository, helping you track and showcase your coding progress effortlessly.
+TAIsync Chrome Extension
+TAIsync is a Chrome extension designed to streamline your coding process by automatically pushing your code to GitHub when you complete TAI problems. This guide will walk you through the setup and usage of TAIsync, including how to obtain a GitHub token and configure your repository.
 
-How fast is it?
-TAIsync is designed to work seamlessly, ensuring your solutions are pushed to your GitHub repository in just a few seconds, making your workflow smooth and efficient.
+🚀 Getting Started
 
-Why use TAIsync?
-Build a Strong Developer Portfolio:
-GitHub is the number one platform for developers to showcase their skills and contributions. TAIsync automatically syncs your coding challenges, solutions, and notes to GitHub without any manual steps, making it easier to maintain a polished portfolio.
+1. Installation
+Clone the Repository:
+Fork and clone this repository to your local machine.
+Navigate to chrome://extensions in your Chrome browser.
+Enable Developer mode by toggling the switch in the top-right corner.
+Click Load unpacked and select the entire TAIsync folder from your local machine.
 
-Eliminate Manual Work:
-Manually uploading your coding solutions to GitHub is tedious and time-consuming. TAIsync handles this for you automatically, so you can focus on solving problems and improving your skills instead of managing repositories.
+3. Setting Up Your GitHub Repository
+Create a GitHub Repository:
 
-How does TAIsync work?
-Your coding portfolio will automatically update as you work. Here’s how to get started with TAIsync:
+Log in to GitHub and create a new repository.
+Make sure to create a folder within this repository where your code will be pushed.
+Note the full path, including your GitHub username and the repository name (e.g., username/repository-name).
 
-Install TAIsync:
-Once installed, launch the extension.
+Obtain a GitHub Token:
 
-Login via GitHub Token:
-To authorize TAIsync with your GitHub account, you will need to use a GitHub personal access token. Here's how to generate one:
+Visit GitHub Personal Access Tokens.
+Click Generate new token.
+Provide a description and select the necessary scopes (e.g., repo for full control of private repositories).
+Generate the token and copy it. You will need this token for authentication.
 
-Go to your GitHub account settings.
-Navigate to Developer Settings > Personal Access Tokens > Generate new token.
-Ensure the token has appropriate permissions (like repo access) for pushing code to your repositories.
-Copy and save the token, as you will use it to log in via TAIsync.
-Set Up Repository:
-After logging in with your GitHub token, you will need to provide the repository path where your solutions will be stored.
-Important: Enter the full GitHub repository path in the format username/repo-name (e.g., johnDoe/myCodingSolutions). 
+3. Configuring TAIsync
+Open TAIsync:
 
-Syncing Solutions:
-Once setup is complete, simply click the "Sync" button, and TAIsync will extract your solution and notes, then automatically upload them to your GitHub repository. The extension will create a new folder in the repository for each coding problem and upload the code, along with a README containing the problem statement and other details.
+Click the TAIsync icon in your Chrome toolbar to open the extension popup.
+Log In with GitHub:
 
-Why was TAIsync built?
-In today's competitive job market, a strong coding portfolio is critical for landing interviews and job offers. TAIsync streamlines the process of maintaining a detailed GitHub portfolio by automating the sync of your coding solutions. This allows you to focus on improving your coding skills while continuously updating your portfolio, helping you stand out to recruiters and potential employers.
+If you haven't logged in yet, you will see a prompt to Log in with GitHub token.
+Enter the GitHub token you obtained earlier and your GitHub repository path in the format: username/repository-name.
+Sync Your Data:
 
-How to set up TAIsync for local development?
+Click the Sync button to start the extraction and upload process.
+If GitHub credentials are not found, you will be prompted to log in.
+Sign Out:
 
-Download the Extension Files:
+Click Sign out to remove your GitHub credentials from the extension.
+After signing out, the login button will reappear instantly for you to log in again if needed.
 
-Clone the repository or download the ZIP from GitHub.
-To clone the repository, users can run:
+4. Using TAIsync
+Extract Data:
 
-Copy code
-git clone https://github.com/Dhanush111/TAIsyncChromeExtension.git
-Alternatively, they can click the "Code" button on GitHub and select "Download ZIP."
-Unzip the Files (if downloaded as a ZIP):
+Click the Sync button to extract the problem data and code from the current Leetcode problem.
+Check Upload Status:
 
-If you downloaded a ZIP file, unzip it to a directory.
-Install the Extension in Chrome:
+The status of your GitHub connection will be displayed in the popup.
+If the upload is successful, you will receive a confirmation message.
 
-Open Chrome and go to chrome://extensions/.
-Enable Developer Mode in the top-right corner.
-Click Load unpacked.
-Select the folder where they unzipped or cloned the extension.
-Use the Extension:
+💡 Tips for a Smooth Experience
 
-The extension will now be visible in Chrome’s extensions area. They can pin it by clicking the puzzle icon in the browser toolbar.
+Ensure that your GitHub token has the necessary permissions to push code to your repository.
+Verify that the repository path you provide matches the format username/repository-name.
+If you encounter issues with login or syncing, check the console for error messages and refer to the troubleshooting section.
 
-TAIsync is now ready for local development!
-With TAIsync, you can streamline your coding workflow, keep your GitHub portfolio updated, and be ready to showcase your skills for job interviews!
+🛠️ Troubleshooting
+GitHub Token Issues: Ensure that the token has the appropriate scopes and is correctly entered.
+Repository Path Errors: Double-check the repository path format and ensure it matches your GitHub setup.
+
+📣 Feedback and Feature Requests
+If you have suggestions or encounter any issues, please open an issue on our GitHub repository. Your feedback helps us improve TAIsync!
+
