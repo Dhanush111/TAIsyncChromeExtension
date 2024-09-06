@@ -4,25 +4,48 @@ TAIsync is a Chrome extension designed to streamline your coding process by auto
 🚀 Getting Started
 
 1. Installation
-Clone the Repository:
-Fork and clone this repository to your local machine.
-Navigate to chrome://extensions in your Chrome browser.
-Enable Developer mode by toggling the switch in the top-right corner.
-Click Load unpacked and select the entire TAIsync folder from your local machine.
 
-3. Setting Up Your GitHub Repository
+Download the Extension Files:
+
+Clone the repository or download the ZIP from GitHub.
+To clone the repository, users can run:
+
+git clone https://github.com/Dhanush111/TAIsyncChromeExtension.git
+
+Alternatively, they can click the "Code" button on GitHub and select "Download ZIP."
+Unzip the Files (if downloaded as a ZIP):
+
+If they downloaded a ZIP file, unzip it to a directory.
+
+Install the Extension in Chrome:
+
+Open Chrome and go to chrome://extensions/.
+Enable Developer Mode in the top-right corner.
+Click Load unpacked.
+Select the folder where they unzipped or cloned the extension.
+
+
+2. Setting Up Your GitHub Repository
 Create a GitHub Repository:
 
 Log in to GitHub and create a new repository.
 Make sure to create a folder within this repository where your code will be pushed.
 Note the full path, including your GitHub username and the repository name (e.g., username/repository-name).
 
-Obtain a GitHub Token:
+Login via GitHub Token:
+To authorize TAIsync with your GitHub account, you will need to use a GitHub personal access token. Here's how to generate one:
 
-Visit GitHub Personal Access Tokens.
-Click Generate new token.
-Provide a description and select the necessary scopes (e.g., repo for full control of private repositories).
-Generate the token and copy it. You will need this token for authentication.
+Go to your GitHub account settings.
+Navigate to settings > Developer Settings > Personal Access Tokens > Tokens (classic) > Generate new token.
+
+Ensure the token has appropriate permissions (repo access) for pushing code to your repositories.
+Copy and save the token, as you will use it to log in via TAIsync.
+
+Use the Extension:
+
+The extension will now be visible in Chrome’s extensions area. They can pin it by clicking the puzzle icon in the browser toolbar.
+
+
 
 3. Configuring TAIsync
 Open TAIsync:
@@ -32,6 +55,9 @@ Log In with GitHub:
 
 If you haven't logged in yet, you will see a prompt to Log in with GitHub token.
 Enter the GitHub token you obtained earlier and your GitHub repository path in the format: username/repository-name.
+
+Important: Enter the full GitHub repository path in the format username/repo-name (e.g., johnDoe/myCodingSolutions).
+
 Sync Your Data:
 
 Click the Sync button to start the extraction and upload process.
@@ -40,6 +66,10 @@ Sign Out:
 
 Click Sign out to remove your GitHub credentials from the extension.
 After signing out, the login button will reappear instantly for you to log in again if needed.
+
+After logging in with your GitHub token, you will need to provide the repository path where your solutions will be stored.
+
+
 
 4. Using TAIsync
 Extract Data:
